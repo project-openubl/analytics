@@ -18,8 +18,8 @@ if [[ "$TRAVIS_PULL_REQUEST" != "false" ]]; then
     -Dsonar.sources='src' \
     -Dsonar.java.source='1.8' \
     -Dsonar.java.binaries='.' \
-    -Dsonar.exclusions='**/*Test.java' \
-    -Dsonar.test.exclusions='**/*Test.java'
+    -Dsonar.exclusions='**/*Test.java,**/*IT.java' \
+    -Dsonar.test.exclusions='**/*Test.java,**/*IT.java'
 fi
 
 if [[ "$TRAVIS_PULL_REQUEST" = "false" ]]; then
