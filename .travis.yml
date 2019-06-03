@@ -15,5 +15,5 @@ jobs:
     - stage: Test
       script:
         - mvn test -Pcoverage
-        - bash <(curl -s https://codecov.io/bash)
-        - ./travis/sonarcloud.sh
+#        - bash <(curl -s https://codecov.io/bash)
+        - mvn sonar:sonar -Pcoverage
