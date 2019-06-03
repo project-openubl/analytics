@@ -11,7 +11,6 @@ public class GreetingResource {
     @GET
     @Produces(MediaType.TEXT_PLAIN)
     public String hello() {
-        System.out.println("internal fork");
         return "hello";
     }
 }
