@@ -1,0 +1,19 @@
+language: java
+notifications:
+  email: false
+jdk:
+  - openjdk8
+addons:
+  sonarcloud:
+    organization: project-xavier
+    token:
+      secure: $SONAR_TOKEN
+install:
+  - cp ./configuration/settings.xml $HOME/.m2/settings.xml
+  - mvn install -P !docker -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+jobs:
+  include:
+    - stage: Test
+      script:
+        - mvn test
+        - sonar-scanner
