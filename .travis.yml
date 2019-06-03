@@ -16,4 +16,4 @@ jobs:
     - stage: Test
       script:
         - mvn test
-        - mvn sonar:sonar -Dsonar.projectKey=ubl-analytics_analytics
+        - mvn sonar-scanner
