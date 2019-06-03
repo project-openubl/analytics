@@ -4,7 +4,7 @@ notifications:
 jdk:
   - openjdk8
 addons:
-  sonarcloud:
+  sonarcloud:https://codecov.io/gh/ubl-analytics/analytics/pulls
     organization: ubl-analytics
     token:
       secure: $SONAR_TOKEN
@@ -14,5 +14,5 @@ jobs:
   include:
     - stage: Test
       script:
-        - mvn test -Pcoverage
-        - mvn sonar:sonar
+        - mvn test
+        - mvn sonar:sonar -Pcoverage
