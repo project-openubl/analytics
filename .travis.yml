@@ -5,7 +5,7 @@ jdk:
   - openjdk8
 addons:
   sonarcloud:
-    organization: project-xavier
+    organization: ubl-analytics
     token:
       secure: $SONAR_TOKEN
 install:
