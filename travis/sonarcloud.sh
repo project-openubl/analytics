@@ -2,7 +2,6 @@
 
 if [[ "$TRAVIS_PULL_REQUEST" != "false" ]]; then
     mvn sonar:sonar -Pcoverage \
-    -Dsonar.login=ff500736dea03d0b10f36cc40801b9c8e22c3918 \
     -Dsonar.pullrequest.base=master \
     -Dsonar.pullrequest.key=${TRAVIS_PULL_REQUEST} \
     -Dsonar.pullrequest.branch=${TRAVIS_PULL_REQUEST_BRANCH} \
