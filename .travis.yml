@@ -15,5 +15,6 @@ jobs:
   include:
     - stage: Test
       script:
-        - mvn test -Pcoverage
-        - sonar-scanner
+        - mvn test sonar:sonar -Pcoverage
+#        - sonar-scanner
+#        - bash <(curl -s https://codecov.io/bash)
