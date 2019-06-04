@@ -24,9 +24,9 @@
         <maven-surefire-plugin.version>2.19.1</maven-surefire-plugin.version>
 
         <!--sonar config-->
+        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
         <sonar.organization>ubl-analytics</sonar.organization>
         <sonar.projectKey>ubl-analytics_analytics</sonar.projectKey>
-        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
         <sonar.sources>src/main</sonar.sources>
         <sonar.tests>src/test</sonar.tests>
         <sonar.java.binaries>target/classes</sonar.java.binaries>
