@@ -25,6 +25,7 @@ import org.springframework.context.annotation.ImportResource;
 public class Application {
 
     public static void main(String[] args) {
+        System.out.println("internal fork 3");
         SpringApplication.run(Application.class, args);
     }
 
