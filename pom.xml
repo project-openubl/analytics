@@ -249,8 +249,8 @@
                                 </goals>
                             </execution>
                             <execution>
-                                <id>jacoco-report</id>
-                                <phase>prepare-package</phase>
+                                <id>jacoco-post-unit-test-report</id>
+                                <phase>test</phase>
                                 <goals>
                                     <goal>report</goal>
                                 </goals>
@@ -269,7 +269,7 @@
                                                 <limit>
                                                     <counter>INSTRUCTION</counter>
                                                     <value>COVEREDRATIO</value>
-                                                    <minimum>0.1</minimum> <!-- 50% -->
+                                                    <minimum>0.1</minimum>
                                                 </limit>
                                             </limits>
                                         </rule>
